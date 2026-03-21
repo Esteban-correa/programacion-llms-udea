@@ -1,0 +1,11 @@
+El Problema:
+Tienes un dataset con variables categóricas y algunas variables numéricas que presentan baja varianza.
+
+Tu Misión:
+Escribe una función llamada limpiar_y_codificar(df) que:
+
+- Reciba un DataFrame de pandas.
+- Identifique las columnas categóricas y les aplique OneHotEncoder de sklearn.preprocessing, devolviendo un array denso.
+- Combine las variables codificadas con las variables numéricas.
+- Use VarianceThreshold de sklearn.feature_selection para eliminar cualquier característica con varianza igual a 0.
+- Devuelva la matriz resultante como un array de NumPy.

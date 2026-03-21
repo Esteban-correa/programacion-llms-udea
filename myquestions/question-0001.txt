@@ -1,0 +1,13 @@
+El Problema:
+Tienes un dataset con lecturas de sensores y sospechas que hay anomalías.
+
+Tu Misión:
+Escribe una función llamada detectar_anomalias(df, contaminacion=0.05) que:
+
+- Reciba un DataFrame de pandas con variables numéricas.
+- Instancie un modelo IsolationForest de sklearn.ensemble usando el parámetro contamination.
+- Entrene el modelo con los datos.
+- Prediga las anomalías sobre el mismo dataset.
+- Devuelva un array de NumPy donde:
+    - -1 indica anomalía
+    - 1 indica dato normal

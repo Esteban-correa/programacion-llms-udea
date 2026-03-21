@@ -1,0 +1,12 @@
+El Problema:
+En el mantenimiento predictivo de turbinas eólicas, se desea reducir la dimensionalidad agrupando sensores altamente correlacionados para disminuir el ruido y el costo computacional.
+
+Tu Misión:
+Escribe una función llamada comprimir_sensores_correlacionados(X, n_clusters) que:
+
+- Reciba una matriz X de tipo numpy.ndarray bidimensional con forma (n_samples, n_features).
+- Reciba un entero n_clusters menor que el número de columnas de X.
+- Cree un modelo FeatureAgglomeration de sklearn.cluster con el parámetro n_clusters.
+- Ajuste el modelo a la matriz X.
+- Transforme la matriz original para reducir el número de características al valor definido en n_clusters.
+- Devuelva la matriz transformada como un numpy.ndarray con forma (n_samples, n_clusters).
